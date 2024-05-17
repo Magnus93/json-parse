@@ -1,0 +1,18 @@
+{
+	"key": "value",
+	"num": 2,
+	"numDecimal": 1.23,
+	"bool": true,
+	"falsy": false,
+	"obj": {
+		"neg": -2,
+		"pos": 3,
+		"e-notation100": 1e2,
+		"e-notationNeg100": -1e2,
+		"nll": null,
+		"objNested": {
+			"longString": "A \"Escape\"!\n and a new Line.",
+			"empty": {}
+		}
+	}
+}
