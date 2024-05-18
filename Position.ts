@@ -9,7 +9,9 @@ export namespace Position {
 	export const type = isly.object<Position>({ row: isly.number(), column: isly.number() }, "Position")
 	export const is = type.is
 	export const flaw = type.flaw
-	export const zero: Position = { row: 0, column: 0 } as const
+	export function zero(): Position {
+		return { row: 0, column: 0 } as const
+	}
 	export function add(left: Position, right: string): Position {
 		const splitted = right.split("\n")
 		return splitted.length > 1
